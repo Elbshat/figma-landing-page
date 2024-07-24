@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/Roboto-Regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../assets/fonts/Roboto-Medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../assets/fonts/Roboto-Bold.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../assets/fonts/Roboto-Black.woff) format("woff");
+  }
+
+  html {
+    @apply font-roboto;
+  }
+  body {
+    @apply bg-dark;
+  }
+
+  h1 {
+    @apply font-black text-4xl sm:text-h1;
+  }
+  h2 {
+    @apply font-normal text-3xl sm:text-h2;
+  }
+  h3 {
+    @apply font-bold text-h3;
+  }
+  h4 {
+    @apply font-bold text-h4;
+  }
+  h5 {
+    @apply font-bold text-h5;
+  }
+  p {
+    @apply font-normal text-p;
+  }
+}
+
+@layer utilities {
+  .backdrop-effect {
+    @apply backdrop-blur-sm bg-dark/60;
+  }
+
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
+  }
+}

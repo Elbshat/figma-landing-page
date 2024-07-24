@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/fav/site.webmanifest" />
+    <!-- FavIcon -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Temp</title>
+  </head>
+  <body class="text-white">
+    <header id="header" class="fixed top-0 w-full z-10 transition duration-300">
+      <div class="max-w-8xl mx-auto px-4 py-4 md:px-10 md:py-5">
+        <div class="flex items-center justify-between md:py-4">
+          <div class="">
+            <img
+              src="./assets/img/logo.png"
+              alt="logo"
+              width="186"
+              height="58"
+            />
+          </div>
+          <nav
+            class="hidden md:flex items-center gap-10"
+            aria-label="Desktop nav"
+          >
+            <ul class="flex items-center gap-5 text-white">
+              <li class="p-[10px] relative group">
+                <a href="#home" class="text-link">Home</a>
+                <span
+                  class="absolute bottom-0 left-0 h-[1px] bg-white w-full scale-x-0 group-hover:scale-x-100 transition origin-left"
+                ></span>
+              </li>
+              <li class="p-[10px] relative group">
+                <a href="#product" class="text-link">Poduct</a>
+                <span
+                  class="absolute bottom-0 left-0 h-[1px] bg-white w-full scale-x-0 group-hover:scale-x-100 transition origin-left"
+                ></span>
+              </li>
+              <li class="p-[10px] relative group">
+                <a href="#pricing" class="text-link">Pricing</a>
+                <span
+                  class="absolute bottom-0 left-0 h-[1px] bg-white w-full scale-x-0 group-hover:scale-x-100 transition origin-left"
+                ></span>
+              </li>
+              <li class="p-[10px] relative group">
+                <a href="#about" class="text-link">About</a>
+                <span
+                  class="absolute bottom-0 left-0 h-[1px] bg-white w-full scale-x-0 group-hover:scale-x-100 transition origin-left"
+                ></span>
+              </li>
+              <li class="p-[10px] relative group">
+                <a href="#contact" class="text-link">Contact</a>
+                <span
+                  class="absolute bottom-0 left-0 h-[1px] bg-white w-full scale-x-0 group-hover:scale-x-100 transition origin-left"
+                ></span>
+              </li>
+            </ul>
+            <form class="hidden large:block space-x-3">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="bg-white px-10 py-5 rounded-full text-input outline-none text-dark placeholder:text-dark"
+              />
+              <button
+                type="submit"
+                class="bg-white px-9 py-5 text-primary font-medium text-btn rounded-full"
+              >
+                Subscribe
+              </button>
+            </form>
+          </nav>
+          <button
+            aria-label="open menu"
+            id="menu-button"
+            class="md:hidden relative h-8 w-8"
+          >
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+          <div
+            class="absolute top-[90px] left-0 w-full hidden justify-center origin-top animate-open-menu flex-col bg-dark"
+            id="mobile-menu"
+          >
+            <nav
+              aria-label="mobile nav"
+              class="flex flex-col items-center justify-center gap-5 text-white min-h-screen"
+            >
+              <a
+                href="#home"
+                class="text-link hover:scale-[1.1] transition-transform"
+                >Home</a
+              >
+              <a
+                href="#product"
+                class="text-link hover:scale-[1.1] transition-transform"
+                >Product</a
+              >
+              <a
+                href="#pricing"
+                class="text-link hover:scale-[1.1] transition-transform"
+                >Pricing</a
+              >
+              <a
+                href="#about"
+                class="text-link hover:scale-[1.1] transition-transform"
+                >About</a
+              >
+              <a
+                href="#contact"
+                class="text-link hover:scale-[1.1] transition-transform"
+                >Contact</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <section
+        id="hero"
+        class="bg-hero bg-no-repeat bg-cover min-h-screen pt-[90px] md:pt-[130px]"
+      >
+        <div class="max-w-7xl mx-auto px-4 py-4 md:px-5 md:py-5">
+          <div
+            class="lg:py-20 flex flex-col-reverse lg:flex-row items-center md:gap-[50px] large:gap-[60px]"
+          >
+            <div class="hidden lg:block w-2/3 relative self-stretch">
+              <img
+                src="assets/img/hero.png"
+                alt="hero"
+                class="absolute right-0 top-0 w-[750px] h-auto scale-125 -translate-x-16"
+              />
+            </div>
+            <div class="w-full text-center lg:w-1/3 text-white">
+              <h1>We focus on ergonomics</h1>
+              <p class="mt-4">
+                Most calendars are designed for teams. Slate is designed for
+                freelancers
+              </p>
+              <div class="mt-16 lg:hidden">
+                <img src="assets/img/hero.png" alt="hero img" />
+              </div>
+              <button
+                type="submit"
+                class="bg-white px-9 py-5 text-accent font-medium text-btn rounded-full my-16"
+              >
+                Try For Free
+              </button>
+            </div>
+            <div class=""></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product">
+        <div class="max-w-5xl mx-auto px-4 py-20 md:px-5">
+          <div class="mx-auto text-center max-w-xs">
+            <h3>At your fingertips</h3>
+            <h2 class="my-4">Featues</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div
+            class="mt-20 grid gap-16 lg:gap-12 max-w-xs mx-auto lg:max-w-none lg:grid-cols-3"
+          >
+            <div class="p-2 text-center">
+              <div class="flex items-center justify-center gap-4">
+                <span
+                  class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.5 0.499939C6.95869 0.499939 8.35764 1.04721 9.38909 2.02136C10.4205 2.9955 11 4.31673 11 5.69438C11 6.95049 10.53 8.10272 9.74 8.99994H18V17.4999H9V9.69883C8.05 10.4449 6.83 10.8888 5.5 10.8888C4.04131 10.8888 2.64236 10.3416 1.61091 9.36741C0.579463 8.39326 0 7.07204 0 5.69438C0 4.31673 0.579463 2.9955 1.61091 2.02136C2.64236 1.04721 4.04131 0.499939 5.5 0.499939Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <h3 class="max-w-52">The best products start with Sketch</h3>
+              </div>
+              <p class="mt-4">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="p-2 text-center">
+              <div class="flex items-center justify-center gap-4">
+                <span
+                  class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.52403 15.8684C8.02267 15.246 7.69432 13.53 6.93658 12.4453C6.18725 11.3339 5.15168 10.5692 4.10768 9.83125C3.36278 9.33544 2.69768 8.71711 2.13755 7.99966C1.90181 7.70625 1.42191 7.16389 1.91023 7.05719C2.40697 6.9505 3.26574 7.46619 3.70355 7.6618C4.46971 7.99966 5.22745 8.39087 5.93467 8.85322L6.78503 7.34171C5.47161 6.42592 3.78774 5.61682 2.22174 5.37676C1.32929 5.2345 0.386327 5.4301 0.0832306 6.45259C-0.186188 7.33282 0.243198 8.22194 0.73152 8.91545C1.88497 10.5425 3.67829 11.325 5.01697 12.7298C5.30322 13.0232 5.64842 13.3699 5.8168 13.7789C5.99361 14.1702 5.95151 14.1968 5.5558 14.1968C4.51181 14.1968 3.20681 13.3344 2.35645 12.7653L1.5061 14.2768C2.79426 15.1126 4.94961 16.4196 6.52403 15.8684ZM15.8611 1.9981C16.0463 1.80249 16.0463 1.48241 15.8611 1.2957L14.7666 0.13984C14.6784 0.0500873 14.5607 -6.10352e-05 14.4382 -6.10352e-05C14.3157 -6.10352e-05 14.198 0.0500873 14.1099 0.13984L13.2511 1.04674L15.0023 2.89611L15.8611 1.9981ZM7.57645 7.03941V8.88878H9.32767L14.5056 3.42069L12.7543 1.57132L7.57645 7.03941Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <h3 class="max-w-52">Fastest way to organize</h3>
+              </div>
+              <p class="mt-4">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="p-2 text-center">
+              <div class="flex items-center justify-center gap-4">
+                <span
+                  class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.09461 10.2387L7.72582 7.60745L1.97063 1.86156C1.52434 1.41528 0.752644 1.53615 0.473717 2.1126C-0.18641 3.49793 0.0553271 5.19939 1.19893 6.35228L5.09461 10.2387ZM11.3984 8.55581C12.8209 9.21593 14.8199 8.75105 16.2982 7.27274C18.074 5.49691 18.418 2.94938 17.0513 1.58263C15.6938 0.22519 13.1463 0.559903 11.3612 2.33574C9.88285 3.81405 9.41797 5.81302 10.0781 7.23555L1.65451 15.6591C1.48066 15.833 1.383 16.0688 1.383 16.3146C1.383 16.5605 1.48066 16.7963 1.65451 16.9701C1.82835 17.1439 2.06413 17.2416 2.30999 17.2416C2.55584 17.2416 2.79162 17.1439 2.96546 16.9701L8.72066 11.2335L14.4666 16.9794C14.5526 17.0655 14.6548 17.1338 14.7673 17.1803C14.8798 17.2269 15.0003 17.2509 15.122 17.2509C15.2438 17.2509 15.3643 17.2269 15.4768 17.1803C15.5892 17.1338 15.6914 17.0655 15.7775 16.9794C15.8636 16.8933 15.9319 16.7911 15.9785 16.6787C16.025 16.5662 16.049 16.4457 16.049 16.3239C16.049 16.2022 16.025 16.0816 15.9785 15.9692C15.9319 15.8567 15.8636 15.7545 15.7775 15.6684L10.0316 9.92255L11.3984 8.55581V8.55581Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <h3 class="max-w-52">Work better together</h3>
+              </div>
+              <p class="mt-4">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="max-w-5xl mx-auto px-4 py-20 md:px-5">
+          <div class="mx-auto text-center max-w-xs">
+            <h2>Lightning fast prototyping</h2>
+            <h4 class="my-4">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+            <button
+              class="bg-accent px-9 py-5 text-white font-medium text-btn rounded-full my-11"
+            >
+              Try For Free
+            </button>
+          </div>
+          <div class="max-w-5xl mx-auto">
+            <img src="./assets/img/macbook.png" alt=" macbook" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="">
+        <div class="max-w-2xl mx-auto px-4 py-20 md:px-5">
+          <div class="text-center">
+            <h3>At your fingertips</h3>
+            <h2>Lightning fast prototyping</h2>
+          </div>
+          <div class="mt-5 max-w-sm mx-auto text-center">
+            <h3>Subscribe to our Newsletter</h3>
+            <p>Available exclusivery on Figmaland</p>
+            <form class="space-y-3 mt-10">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="bg-white px-10 py-5 rounded-full text-input outline-none text-dark placeholder:text-dark w-full"
+              />
+              <button
+                type="submit"
+                class="bg-primary px-9 py-5 text-white font-medium text-btn rounded-full w-full"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="">
+        <div class="max-w-4xl mx-auto px-4 py-20 md:px-5">
+          <div class="mx-auto text-center max-w-xs">
+            <h2>Partners</h2>
+            <h4 class="mt-4">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-3 gap-y-20 gap-x-14 mt-16 max-w-md mx-auto lg:max-w-none"
+          >
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-1.svg" alt=" client-1" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-2.svg" alt=" client-2" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-3.svg" alt=" client-3" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-4.svg" alt=" client-4.svg" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-5.svg" alt=" client-5" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+            <div class="space-y-[15px] text-center">
+              <h5>Client Name</h5>
+              <span class="flex items-center justify-center">
+                <img src="./assets/img/client-6.svg" alt=" client-6" />
+              </span>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div
+          class="max-w-2xl mx-auto px-4 py-20 md:px-5 text-center space-y-20"
+        >
+          <h2>Testimonials</h2>
+          <div class="space-y-12">
+            <img
+              src="./assets/img/dropbox.svg"
+              alt=" dropbox logo"
+              class="mx-auto"
+            />
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers who want a simple way to plan their schedule.
+            </h4>
+            <div class="flex items-center justify-center gap-3">
+              <div class="w-12 h-12 rounded-full">
+                <img src="./assets/img/avatar.png" alt=" avatar" />
+              </div>
+              <div class="text-left">
+                <h5>Organize across</h5>
+                <a class="cursor-pointer">Ui designer</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="bg-accent px-9 py-5 text-white font-medium text-btn rounded-full"
+          >
+            More Testimonials
+          </button>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="max-w-6xl mx-auto px-4 py-20 md:px-5">
+          <div class="text-center max-w-[296px] mx-auto space-y-7">
+            <h2>Pricing</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div class="grid lg:grid-cols-3 gap-12 mt-20">
+            <div
+              class="bg-gradient-to-tr from-white to-white bg-white text-dark p-10 space-y-[30px] rounded-[10px] transition duration-500 group hover:bg-gradient-to-tr hover:from-primary hover:to-secondary hover:text-white"
+            >
+              <div class="">
+                <h3 class="">Free</h3>
+                <h5
+                  class="text-body group-hover:text-white transition duration-500"
+                >
+                  Organize across all apps by hand
+                </h5>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <h1 class="">0</h1>
+                <span class="">
+                  <h3>$</h3>
+                  <h5
+                    class="text-body group-hover:text-white transition duration-500"
+                  >
+                    Per Month
+                  </h5>
+                </span>
+              </div>
+              <button
+                class="bg-accent px-9 py-5 text-white font-medium text-btn rounded-full w-full transition duration-500 group-hover:bg-white group-hover:text-primary"
+              >
+                Order Now
+              </button>
+            </div>
+            <div
+              class="bg-gradient-to-tr from-white to-white bg-white text-dark p-10 space-y-[30px] rounded-[10px] transition duration-500 group hover:bg-gradient-to-tr hover:from-primary hover:to-secondary hover:text-white"
+            >
+              <div class="">
+                <h3 class="">Standard</h3>
+                <h5
+                  class="text-body group-hover:text-white transition duration-500"
+                >
+                  Organize across all apps by hand
+                </h5>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <h1 class="">10</h1>
+                <span class="">
+                  <h3>$</h3>
+                  <h5
+                    class="text-body group-hover:text-white transition duration-500"
+                  >
+                    Per Month
+                  </h5>
+                </span>
+              </div>
+              <button
+                class="bg-accent px-9 py-5 text-white font-medium text-btn rounded-full w-full transition duration-500 group-hover:bg-white group-hover:text-primary"
+              >
+                Order Now
+              </button>
+            </div>
+            <div
+              class="bg-gradient-to-tr from-white to-white bg-white text-dark p-10 space-y-[30px] rounded-[10px] transition duration-500 group hover:bg-gradient-to-tr hover:from-primary hover:to-secondary hover:text-white"
+            >
+              <div class="">
+                <h3 class="">Business</h3>
+                <h5
+                  class="text-body group-hover:text-white transition duration-500"
+                >
+                  Organize across all apps by hand
+                </h5>
+              </div>
+              <div class="flex items-center gap-[10px]">
+                <h1 class="">99</h1>
+                <span class="">
+                  <h3>$</h3>
+                  <h5
+                    class="text-body group-hover:text-white transition duration-500"
+                  >
+                    Per Month
+                  </h5>
+                </span>
+              </div>
+              <button
+                class="bg-accent px-9 py-5 text-white font-medium text-btn rounded-full w-full transition duration-500 group-hover:bg-white group-hover:text-primary"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-accent-light text-dark">
+        <div class="max-w-3xl mx-auto px-4 py-20 md:px-5 space-y-[50px]">
+          <div class="max-w-sm mx-auto text-center space-y-6">
+            <h2>Contact Us</h2>
+            <h4 class="p-[10px] pt-0">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div
+            class="flex flex-col items-center lg:flex-row-reverse gap-[50px] lg:gap-[65px]"
+          >
+            <div class="space-y-[50px] w-[264px] mx-auto">
+              <div class="space-y-[10px]">
+                <div class="flex gap-[10px]">
+                  <span
+                    ><svg
+                      width="27"
+                      height="33"
+                      viewBox="0 0 27 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_105_2535)">
+                        <path
+                          d="M13.8626 19.8639C17.3555 19.8639 20.196 17.0234 20.196 13.5306C20.196 10.0378 17.3555 7.19727 13.8626 7.19727C10.3698 7.19727 7.5293 10.0378 7.5293 13.5306C7.5293 17.0234 10.3698 19.8639 13.8626 19.8639ZM13.8626 10.3639C15.609 10.3639 17.0293 11.7842 17.0293 13.5306C17.0293 15.277 15.609 16.6973 13.8626 16.6973C12.1162 16.6973 10.696 15.277 10.696 13.5306C10.696 11.7842 12.1162 10.3639 13.8626 10.3639Z"
+                          fill="#EF2779"
+                        />
+                        <path
+                          d="M12.6118 32.2359C12.8797 32.4273 13.2008 32.5302 13.5301 32.5302C13.8594 32.5302 14.1804 32.4273 14.4484 32.2359C14.9298 31.8955 26.2427 23.7271 26.1968 13.5304C26.1968 6.54635 20.5142 0.86377 13.5301 0.86377C6.546 0.86377 0.863421 6.54635 0.863421 13.5225C0.817504 23.7271 12.1304 31.8955 12.6118 32.2359ZM13.5301 4.03044C18.7693 4.03044 23.0301 8.29119 23.0301 13.5384C23.0633 20.5652 16.0824 26.8748 13.5301 28.9442C10.9793 26.8732 3.99684 20.562 4.03009 13.5304C4.03009 8.29119 8.29084 4.03044 13.5301 4.03044Z"
+                          fill="#EF2779"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_105_2535">
+                          <rect
+                            width="26"
+                            height="32"
+                            fill="white"
+                            transform="translate(0.863281 0.697266)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <h5>
+                    6386 Spring St undefined Anchorage, Georgia 12473 United
+                    States
+                  </h5>
+                </div>
+                <div class="flex gap-[10px]">
+                  <span
+                    ><svg
+                      width="22"
+                      height="35"
+                      viewBox="0 0 22 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_105_2541)">
+                        <path
+                          d="M16.9049 1.65576H5.23828C2.81745 1.65576 0.863281 3.60993 0.863281 6.03076V29.3641C0.863281 31.7849 2.81745 33.7391 5.23828 33.7391H16.9049C19.3258 33.7391 21.2799 31.7849 21.2799 29.3641V6.03076C21.2799 3.60993 19.3258 1.65576 16.9049 1.65576ZM13.9883 30.8224H8.15495V29.3641H13.9883V30.8224ZM18.7279 26.4474H3.41536V6.03076H18.7279V26.4474Z"
+                          fill="#EF2779"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_105_2541">
+                          <rect
+                            width="21"
+                            height="34"
+                            fill="white"
+                            transform="translate(0.863281 0.697266)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <h5>(843) 555-0130</h5>
+                </div>
+                <div class="flex gap-[10px]">
+                  <span
+                    ><svg
+                      width="28"
+                      height="23"
+                      viewBox="0 0 28 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_105_2547)">
+                        <path
+                          d="M26.1758 1.38477H1.80078C1.28223 1.38477 0.863281 1.80371 0.863281 2.32227V21.0723C0.863281 21.5908 1.28223 22.0098 1.80078 22.0098H26.1758C26.6943 22.0098 27.1133 21.5908 27.1133 21.0723V2.32227C27.1133 1.80371 26.6943 1.38477 26.1758 1.38477ZM25.0039 4.63086V19.9004H2.97266V4.63086L2.16406 4.00098L3.31543 2.52148L4.56934 3.49707H23.4102L24.6641 2.52148L25.8154 4.00098L25.0039 4.63086ZM23.4102 3.49414L13.9883 10.8184L4.56641 3.49414L3.3125 2.51855L2.16113 3.99805L2.96973 4.62793L12.9775 12.4092C13.2653 12.6328 13.6194 12.7542 13.9839 12.7542C14.3483 12.7542 14.7024 12.6328 14.9902 12.4092L25.0039 4.63086L25.8125 4.00098L24.6611 2.52148L23.4102 3.49414Z"
+                          fill="#EF2779"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_105_2547">
+                          <rect
+                            width="27"
+                            height="22"
+                            fill="white"
+                            transform="translate(0.863281 0.697266)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <h5>willie.jennings@example.com</h5>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <span
+                  ><svg
+                    width="34"
+                    height="28"
+                    viewBox="0 0 34 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.0087 3.87572C32.7839 4.40407 31.4511 4.78431 30.0782 4.93241C31.5036 4.0856 32.571 2.74779 33.0801 1.16997C31.7426 1.96564 30.2773 2.52358 28.7493 2.81904C28.1107 2.1363 27.3383 1.5924 26.4803 1.22123C25.6222 0.85006 24.697 0.659573 23.7621 0.661638C19.9796 0.661638 16.9377 3.72763 16.9377 7.49007C16.9377 8.01841 17.0017 8.54675 17.1058 9.05508C11.4421 8.75889 6.39082 6.05314 3.03264 1.91045C2.42074 2.95559 2.10009 4.1456 2.10403 5.35668C2.10403 7.72622 3.30882 9.81558 5.14601 11.0444C4.06332 11.0017 3.00599 10.7041 2.06001 10.1758V10.2599C2.06001 13.578 4.40553 16.3278 7.53156 16.9602C6.94461 17.1127 6.34081 17.1907 5.73439 17.1924C5.2901 17.1924 4.86983 17.1483 4.44555 17.0883C5.31011 19.7941 7.82775 21.7593 10.8257 21.8234C8.48017 23.6606 5.54226 24.7413 2.3522 24.7413C1.77982 24.7413 1.25148 24.7213 0.703125 24.6572C3.72909 26.5985 7.31942 27.7192 11.1859 27.7192C23.7381 27.7192 30.6065 17.3204 30.6065 8.29459C30.6065 7.9984 30.6065 7.70221 30.5865 7.40601C31.9154 6.43338 33.0801 5.2286 34.0087 3.87572Z"
+                      fill="#EF2779"
+                    />
+                  </svg>
+                </span>
+                <span
+                  ><svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.0739 0.180176H1.61482C0.906356 0.180176 0.333984 0.752547 0.333984 1.46101V30.9201C0.333984 31.6286 0.906356 32.201 1.61482 32.201H31.0739C31.7824 32.201 32.3548 31.6286 32.3548 30.9201V1.46101C32.3548 0.752547 31.7824 0.180176 31.0739 0.180176ZM27.3755 9.52624H24.8179C22.8126 9.52624 22.4243 10.4789 22.4243 11.8798V14.9658H27.2114L26.587 19.7969H22.4243V32.201H17.4331V19.8009H13.2584V14.9658H17.4331V11.4035C17.4331 7.26877 19.9587 5.01531 23.6491 5.01531C25.4183 5.01531 26.9352 5.1474 27.3795 5.20744V9.52624H27.3755Z"
+                      fill="#EF2779"
+                    />
+                  </svg>
+                </span>
+                <span
+                  ><svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.0603 0.180176H1.60114C0.892684 0.180176 0.320312 0.752547 0.320312 1.46101V30.9201C0.320312 31.6286 0.892684 32.201 1.60114 32.201H31.0603C31.7687 32.201 32.3411 31.6286 32.3411 30.9201V1.46101C32.3411 0.752547 31.7687 0.180176 31.0603 0.180176ZM9.81847 27.4659H5.06739V12.184H9.81847V27.4659ZM7.44494 10.0946C6.90029 10.0946 6.36787 9.9331 5.91501 9.63051C5.46216 9.32792 5.1092 8.89784 4.90077 8.39465C4.69234 7.89146 4.63781 7.33777 4.74406 6.80359C4.85032 6.2694 5.11259 5.77872 5.49771 5.3936C5.88284 5.00848 6.37352 4.7462 6.9077 4.63995C7.44188 4.53369 7.99557 4.58823 8.49876 4.79665C9.00195 5.00508 9.43204 5.35804 9.73463 5.8109C10.0372 6.26376 10.1987 6.79617 10.1987 7.34082C10.1947 8.86181 8.96192 10.0946 7.44494 10.0946ZM27.606 27.4659H22.8589V20.0331C22.8589 18.2599 22.8269 15.9824 20.3893 15.9824C17.9197 15.9824 17.5395 17.9117 17.5395 19.905V27.4659H12.7964V12.184H17.3514V14.2733H17.4154C18.0478 13.0725 19.5968 11.8037 21.9103 11.8037C26.7214 11.8037 27.606 14.9698 27.606 19.0844V27.4659Z"
+                      fill="#EF2779"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <form action="" class="space-y-8 p-10 bg-white rounded-lg">
+              <h3 class="font-bold leading-[21px] text-[14px] text-center">
+                Contact Us
+              </h3>
+              <input
+                type="text"
+                placeholder="Your Name "
+                class="bg-input-bg placeholder:text-body p-3 rounded-full w-full"
+              />
+              <input
+                type="email"
+                placeholder="Your Email "
+                class="bg-input-bg placeholder:text-body p-3 rounded-full w-full"
+              />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+                class="bg-input-bg placeholder:text-body p-3 rounded-sm w-full resize-none h-24"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="bg-primary px-9 py-5 text-white font-medium text-btn rounded-full transition duration-500 hover:bg-hero"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="min-h-72 text-white">
+      <div class="max-w-[1072px] mx-auto px-4 md:px-5 py-20">
+        <div
+          class="flex flex-col lg:flex-row gap-14 justify-between items-center"
+        >
+          <div class="lg:w-1/4">
+            <h3>Pages</h3>
+            <ul class="mt-5 space-y-4">
+              <li>
+                <a href="#" class="text-link hover:text-primary transition"
+                  >Eleanor Edwards</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-link hover:text-primary transition"
+                  >Ted Robertson</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-link hover:text-primary transition"
+                  >Annette Russell</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-link hover:text-primary transition"
+                  >Jennie Mckinney</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-link hover:text-primary transition"
+                  >Gloria Richards</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <img src="./assets/img/map.png" alt="map location" />
+          </div>
+          <div class="space-y-[50px] max-w-[264px] lg:w-1/4">
+            <div class="space-y-[10px]">
+              <div class="flex gap-[10px]">
+                <span
+                  ><svg
+                    width="27"
+                    height="33"
+                    viewBox="0 0 27 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_105_2535)">
+                      <path
+                        d="M13.8626 19.8639C17.3555 19.8639 20.196 17.0234 20.196 13.5306C20.196 10.0378 17.3555 7.19727 13.8626 7.19727C10.3698 7.19727 7.5293 10.0378 7.5293 13.5306C7.5293 17.0234 10.3698 19.8639 13.8626 19.8639ZM13.8626 10.3639C15.609 10.3639 17.0293 11.7842 17.0293 13.5306C17.0293 15.277 15.609 16.6973 13.8626 16.6973C12.1162 16.6973 10.696 15.277 10.696 13.5306C10.696 11.7842 12.1162 10.3639 13.8626 10.3639Z"
+                        fill="#EF2779"
+                      />
+                      <path
+                        d="M12.6118 32.2359C12.8797 32.4273 13.2008 32.5302 13.5301 32.5302C13.8594 32.5302 14.1804 32.4273 14.4484 32.2359C14.9298 31.8955 26.2427 23.7271 26.1968 13.5304C26.1968 6.54635 20.5142 0.86377 13.5301 0.86377C6.546 0.86377 0.863421 6.54635 0.863421 13.5225C0.817504 23.7271 12.1304 31.8955 12.6118 32.2359ZM13.5301 4.03044C18.7693 4.03044 23.0301 8.29119 23.0301 13.5384C23.0633 20.5652 16.0824 26.8748 13.5301 28.9442C10.9793 26.8732 3.99684 20.562 4.03009 13.5304C4.03009 8.29119 8.29084 4.03044 13.5301 4.03044Z"
+                        fill="#EF2779"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_105_2535">
+                        <rect
+                          width="26"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.863281 0.697266)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <h5>
+                  6386 Spring St undefined Anchorage, Georgia 12473 United
+                  States
+                </h5>
+              </div>
+              <div class="flex gap-[10px]">
+                <span
+                  ><svg
+                    width="22"
+                    height="35"
+                    viewBox="0 0 22 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_105_2541)">
+                      <path
+                        d="M16.9049 1.65576H5.23828C2.81745 1.65576 0.863281 3.60993 0.863281 6.03076V29.3641C0.863281 31.7849 2.81745 33.7391 5.23828 33.7391H16.9049C19.3258 33.7391 21.2799 31.7849 21.2799 29.3641V6.03076C21.2799 3.60993 19.3258 1.65576 16.9049 1.65576ZM13.9883 30.8224H8.15495V29.3641H13.9883V30.8224ZM18.7279 26.4474H3.41536V6.03076H18.7279V26.4474Z"
+                        fill="#EF2779"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_105_2541">
+                        <rect
+                          width="21"
+                          height="34"
+                          fill="white"
+                          transform="translate(0.863281 0.697266)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <h5>(843) 555-0130</h5>
+              </div>
+              <div class="flex gap-[10px]">
+                <span
+                  ><svg
+                    width="28"
+                    height="23"
+                    viewBox="0 0 28 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_105_2547)">
+                      <path
+                        d="M26.1758 1.38477H1.80078C1.28223 1.38477 0.863281 1.80371 0.863281 2.32227V21.0723C0.863281 21.5908 1.28223 22.0098 1.80078 22.0098H26.1758C26.6943 22.0098 27.1133 21.5908 27.1133 21.0723V2.32227C27.1133 1.80371 26.6943 1.38477 26.1758 1.38477ZM25.0039 4.63086V19.9004H2.97266V4.63086L2.16406 4.00098L3.31543 2.52148L4.56934 3.49707H23.4102L24.6641 2.52148L25.8154 4.00098L25.0039 4.63086ZM23.4102 3.49414L13.9883 10.8184L4.56641 3.49414L3.3125 2.51855L2.16113 3.99805L2.96973 4.62793L12.9775 12.4092C13.2653 12.6328 13.6194 12.7542 13.9839 12.7542C14.3483 12.7542 14.7024 12.6328 14.9902 12.4092L25.0039 4.63086L25.8125 4.00098L24.6611 2.52148L23.4102 3.49414Z"
+                        fill="#EF2779"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_105_2547">
+                        <rect
+                          width="27"
+                          height="22"
+                          fill="white"
+                          transform="translate(0.863281 0.697266)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <h5>willie.jennings@example.com</h5>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span
+                ><svg
+                  width="34"
+                  height="28"
+                  viewBox="0 0 34 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.0087 3.87572C32.7839 4.40407 31.4511 4.78431 30.0782 4.93241C31.5036 4.0856 32.571 2.74779 33.0801 1.16997C31.7426 1.96564 30.2773 2.52358 28.7493 2.81904C28.1107 2.1363 27.3383 1.5924 26.4803 1.22123C25.6222 0.85006 24.697 0.659573 23.7621 0.661638C19.9796 0.661638 16.9377 3.72763 16.9377 7.49007C16.9377 8.01841 17.0017 8.54675 17.1058 9.05508C11.4421 8.75889 6.39082 6.05314 3.03264 1.91045C2.42074 2.95559 2.10009 4.1456 2.10403 5.35668C2.10403 7.72622 3.30882 9.81558 5.14601 11.0444C4.06332 11.0017 3.00599 10.7041 2.06001 10.1758V10.2599C2.06001 13.578 4.40553 16.3278 7.53156 16.9602C6.94461 17.1127 6.34081 17.1907 5.73439 17.1924C5.2901 17.1924 4.86983 17.1483 4.44555 17.0883C5.31011 19.7941 7.82775 21.7593 10.8257 21.8234C8.48017 23.6606 5.54226 24.7413 2.3522 24.7413C1.77982 24.7413 1.25148 24.7213 0.703125 24.6572C3.72909 26.5985 7.31942 27.7192 11.1859 27.7192C23.7381 27.7192 30.6065 17.3204 30.6065 8.29459C30.6065 7.9984 30.6065 7.70221 30.5865 7.40601C31.9154 6.43338 33.0801 5.2286 34.0087 3.87572Z"
+                    fill="#EF2779"
+                  />
+                </svg>
+              </span>
+              <span
+                ><svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.0739 0.180176H1.61482C0.906356 0.180176 0.333984 0.752547 0.333984 1.46101V30.9201C0.333984 31.6286 0.906356 32.201 1.61482 32.201H31.0739C31.7824 32.201 32.3548 31.6286 32.3548 30.9201V1.46101C32.3548 0.752547 31.7824 0.180176 31.0739 0.180176ZM27.3755 9.52624H24.8179C22.8126 9.52624 22.4243 10.4789 22.4243 11.8798V14.9658H27.2114L26.587 19.7969H22.4243V32.201H17.4331V19.8009H13.2584V14.9658H17.4331V11.4035C17.4331 7.26877 19.9587 5.01531 23.6491 5.01531C25.4183 5.01531 26.9352 5.1474 27.3795 5.20744V9.52624H27.3755Z"
+                    fill="#EF2779"
+                  />
+                </svg>
+              </span>
+              <span
+                ><svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.0603 0.180176H1.60114C0.892684 0.180176 0.320312 0.752547 0.320312 1.46101V30.9201C0.320312 31.6286 0.892684 32.201 1.60114 32.201H31.0603C31.7687 32.201 32.3411 31.6286 32.3411 30.9201V1.46101C32.3411 0.752547 31.7687 0.180176 31.0603 0.180176ZM9.81847 27.4659H5.06739V12.184H9.81847V27.4659ZM7.44494 10.0946C6.90029 10.0946 6.36787 9.9331 5.91501 9.63051C5.46216 9.32792 5.1092 8.89784 4.90077 8.39465C4.69234 7.89146 4.63781 7.33777 4.74406 6.80359C4.85032 6.2694 5.11259 5.77872 5.49771 5.3936C5.88284 5.00848 6.37352 4.7462 6.9077 4.63995C7.44188 4.53369 7.99557 4.58823 8.49876 4.79665C9.00195 5.00508 9.43204 5.35804 9.73463 5.8109C10.0372 6.26376 10.1987 6.79617 10.1987 7.34082C10.1947 8.86181 8.96192 10.0946 7.44494 10.0946ZM27.606 27.4659H22.8589V20.0331C22.8589 18.2599 22.8269 15.9824 20.3893 15.9824C17.9197 15.9824 17.5395 17.9117 17.5395 19.905V27.4659H12.7964V12.184H17.3514V14.2733H17.4154C18.0478 13.0725 19.5968 11.8037 21.9103 11.8037C26.7214 11.8037 27.606 14.9698 27.606 19.0844V27.4659Z"
+                    fill="#EF2779"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
